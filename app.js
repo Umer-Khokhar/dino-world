@@ -1,7 +1,7 @@
 const cardContainer = document.getElementById('cards');
 const showMoreButton = document.getElementById('show-more');
 let cardsData = [];
-let visibleCards = 5;
+let visibleCards = 20;
 let totalCards;
 
 async function fetchData() {
@@ -42,7 +42,7 @@ function createCardElement(card) {
 }
 
 function loadMoreCards() {
-  visibleCards += 5;
+  visibleCards += 8;
   renderCards();
 }
 
